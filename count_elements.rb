@@ -1,4 +1,11 @@
+require "pry"
+
 def count_elements(array)
-  # code goes here
+
+  result = {}
+
+  array.uniq.each{|element| result[element] = array.count(element)}
+  binding.pry
+
+result
 end
- 
